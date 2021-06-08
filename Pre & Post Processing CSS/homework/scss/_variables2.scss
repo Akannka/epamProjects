@@ -1,0 +1,10 @@
+$bgimage: url("../img/m-h-night.jpg");
+$bgColor: #21232e;
+$textColor: #ffffff;
+$bgBlockColor: #3b3f50;
+$textBlockColor: #9cbfd1;
+$highlight: #ff4e33;
+$buttonColor: #e3ac00;
+$gradient: linear-gradient(to right, #db9f09 0%, #922c52 100%);
+@use "scss:map";
+$font: ("main": "Source Sans Pro", "forText": "Hind", "logo": "Fresca");

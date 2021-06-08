@@ -1,0 +1,149 @@
+@media print{  
+    .heading,
+    .carousel,
+    .tm-sidebar, 
+    .gallery-container, 
+    .tm-main-nav, 
+    .blocks,
+    .img-contact-us,
+    .contact-form,
+    #contact{
+        display: none; 
+    }
+
+}
+
+
+section:before{
+	content:"";
+	display:block;
+	border: 35px solid transparent; 
+	border-left: 250px solid lightskyblue; 
+	border-top: 0 solid lightskyblue;
+}
+
+    
+h2 + p{
+    font-style: italic;
+    
+}
+
+p::first-letter{
+    font-size: 30px;
+    color: lightskyblue;
+}
+
+p::first-line{
+    text-indent: 20px;
+}
+
+p{
+    line-height: 30px; 
+}
+
+.flex-2-col{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.flex-2-col > div:nth-child(1){
+    flex: 0 0 350px; 
+    align-self: center;
+
+}
+
+.tm-content-box li.box-bg:nth-child(odd)  h2:hover{
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;    
+}
+
+.tm-content-box{
+    box-shadow: 0 0 10px #888888;
+}
+
+.tm-banner{
+    background-color: lightgrey;
+}
+
+.tm-banner-inner{
+    background-color: white;
+}
+
+.carousel-inner h2{
+    color:gainsboro;
+    letter-spacing: 5px;
+}
+
+.heading .padding-medium a {
+    color: black;
+}
+
+.heading a:visited {
+    text-decoration: underline;
+
+}
+
+.heading a:hover {
+    color: lightskyblue;
+    text-decoration: double underline;
+}
+
+
+div.padding-medium li:nth-child(1) a:after{
+    color: red;
+    font-size: 0.8em;
+    content: "New";
+    vertical-align: super;    
+}
+
+div.padding-medium li:nth-child(3) a:after{
+    color: red;
+    font-size: 0.8em;
+    content: "New";
+    vertical-align: super;    
+}
+
+.blocks .gallery-container p:first-letter{
+    color: black;
+}
+
+.blocks .gallery-container li:nth-child(even){
+    background-color: lightgrey;
+}
+
+.blocks .gallery-container li{
+    padding: 10px;
+}
+
+.blocks .gallery-container p:first-line{
+    text-indent: 0;
+}
+
+div.mandatory-field:after { 
+    content:"*"; 
+    color: red;
+}
+
+.btn{
+    background-color: white;
+    color: lightskyblue;
+    border-color: lightskyblue;
+    float: right;
+    border-radius: 0;
+    padding: 10px 40px;
+}
+
+.btn:hover{
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
+
+.tm-nav-item:hover{
+    background-color: lightgrey;
+}
+
+
+
+

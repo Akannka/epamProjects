@@ -1,0 +1,10 @@
+$bgimage: url("../img/m-h-day.jpg");
+$textColor: #21232e;
+$bgColor: #ffffff;
+$bgBlockColor: #21232e;
+$textBlockColor: #78a5ce;
+$highlight: #14a0c7;
+$buttonColor: #699900;
+$gradient: linear-gradient(to right, #639317 0%, #2c5adc 100%);
+@use "scss:map";
+$font: ("main": "Source Sans Pro", "forText": "Hind", "logo": "Fresca");

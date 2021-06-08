@@ -1,0 +1,70 @@
+
+
+
+body{
+	Font-family: "Roboto";
+	
+}
+
+a.navbar-brand{
+	color:#525252;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+}
+ .button-nav{
+	height: 4vmax;
+	width: 14vmax;
+	font-size: 1.5vmax;
+}
+.title{
+	font-size:3vmax;
+}
+.subtitle{
+	font-size:1.5vmax;
+}
+.button-header{
+	height: 4vmax;
+	width: 14vmax;
+	font-size:1.5vmax;
+	background-color:coral;
+	
+}
+
+img {
+	width: 100%;
+}
+
+.games{
+	color:#FFF;
+}
+.games-title{
+	font-size:2.5vmax;
+}
+
+.games-subtitle{
+	font-size: 1.3vmax;
+	
+}
+.card-title{
+	font-size: 1.3vmax;
+}
+.card-subtitle{
+	font-size: 0.8vmax;
+
+}
+.games-second{
+	color:#111;
+}
+.button-form{
+	width: 100%;
+	color:#FFF;
+	background-color:coral;
+	
+}
+
+
+.subscribe-form{
+	color:#FFF;
+}
+

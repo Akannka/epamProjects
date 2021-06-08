@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: $bgColor;
+}
+
+.landing-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    p{
+        font-family: map-get($font, "logo");
+        font-size: 20px;
+        width: 60px;
+        text-align: center;
+        color: $textColor;
+        span{
+            display: block;
+            font-size: 10px;
+        }
+    }
+    
+}
+
+.header-wrap{
+    display: flex;
+    flex-direction: column;
+    background-image: $bgimage;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:  100% 100%;
+    height: 720px;
+    text-align: left;
+    border-radius: 0 0 900px/400px 0;
+}
+
+.header-wrap p + div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    margin-top: 50px;
+}
+
+
+.header_heading{
+    margin-top: 50px;
+    margin-left: 100px;
+    line-height: 1;
+    color: $textColor; 
+    font-family: map-get($font, "main");
+    font-size: 50px;
+    font-weight: bold;
+    width: 350px;
+}
+
+
+%highlight{
+    position: absolute;
+    background-color: $highlight;
+}
+.header_heading:before{
+    @extend %highlight;
+    top: 164px;
+    content: "awesome";        
+}
+
+.header_text{
+    margin-top: 50px;
+    font-family: map-get($font, "forText");
+    color: $textColor; 
+    white-space: pre;
+    margin-left: 50px;
+}
+
+@mixin background-color($background-color: black){
+    -webkit-background-color:$background-color;
+    -moz-background-color:$background-color;
+    -ms-background-color:$background-color;
+    background-color:$background-color;
+}
+%button{
+    @include background-color($buttonColor);
+    color: white;
+    font-size: 15px;
+    border: $buttonColor;
+    border-radius: 3px;
+    font-family: map-get($font, "main");
+    font-weight: bold;
+}
+.header_button{
+    @include background-color($buttonColor);
+    @extend %button;
+    padding: 10px 40px;    
+}
+
+@mixin font-size($font-size: 15px){
+    -webkit-font-size:$font-size;
+    -moz-font-size:$font-size;
+    -ms-font-size:$font-size;
+    font-size:$font-size;
+}
+
+.login{
+    @include font-size(20px);
+    display: block;
+    color: white;
+}
+
+.section{
+    background-color: $bgColor;
+}
+
+.section_text{    
+    display: block;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    color: $textColor;
+    font-family: map-get($font, "main");
+    font-size: 60px;
+    background: linear-gradient(to left, transparent 0%, transparent 14%, $highlight 14%, $highlight 48%, transparent 48%, transparent 99%);
+    text-decoration: none;
+}
+
+.section_card_wrap{
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1050px;
+    margin-bottom: 150px;
+}
+
+.section_card{
+    display: flex;
+    flex-direction: row;
+    width: 1120px;
+    height: 330px;
+    background-color: $bgBlockColor;
+    border-radius: 10px; 
+    img{
+        align-self: center;
+        display: block;
+        width: 430px;
+        height: 290px;
+        border-radius: 10px;     
+        margin-left: 20px;
+    }
+    
+    .section_card_right_container{
+        margin-left: 80px;
+        .section_card_heading{
+            font-family: map-get($font, "main");
+            font-size: 30px;
+            margin-top: 80px;
+            text-align: center;
+            color: white;
+        }
+        .section_card_text{
+            margin-top: 40px;
+            font-family: map-get($font, "forText");
+            font-size: 15px;
+            width: 500px;
+            color: #ffffff;
+        }
+        .section_link{
+            @include font-size(15px);
+            display: block;
+            text-align: center;
+            font-family: map-get($font, "forText");
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.section_banner{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 150px;
+    margin: auto;
+    background: $gradient;
+    position: relative;
+    bottom: -75px;
+    border-radius: 10px;
+    background-color: $bgColor;
+
+    .section_banner_text_wrap{
+        align-self: center;
+        .section_banner_heading{
+            margin-bottom: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: $textColor;
+            font-family: map-get($font, "main");
+            background: linear-gradient(to right, transparent 0%, transparent 30%, $highlight 30%, $highlight 46%, transparent 46%, transparent 99%);
+        }
+        .section_banner_text{
+            color: white;
+            font-family: map-get($font, "forText");
+            font-size: 20px;
+        }
+    }
+    
+    .section_banner_button{
+        @include background-color($buttonColor);
+        @extend %button;
+        padding: 0 40px;
+        margin: 50px 0;    
+    }
+}
+
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 240px;
+    background-color: $bgBlockColor;
+    
+    .footer_logo{
+        margin-bottom: 40px;
+        color: white; 
+    }
+    .footer_text{
+        margin-bottom: 40px;
+        color: white;
+        width: 300px;
+        font-family: map-get($font, "forText");
+        font-size: 15px;
+    }
+    .footer-cr{
+        margin-bottom: 40px;
+        color: white;
+        font-family: map-get($font, "forText");
+        font-size: 15px;
+    }
+    
+}
+
+
+
+
+

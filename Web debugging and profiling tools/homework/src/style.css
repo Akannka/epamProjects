@@ -1,0 +1,27 @@
+form {
+    border: 2px solid #000;
+    width: 800px;
+    margin: auto;
+    padding: 10px 10px;
+
+}
+
+form input{
+    background-color: #3cbc8c;
+    border: none;
+    width: 780px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin: 10px auto 10px auto;
+    opacity: 80%;
+}
+
+form div button{
+    background-color: #4cb050;
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+}

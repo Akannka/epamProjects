@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 14 - JS DOM Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="task1">
+        <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+        <div class="task1__wrapper">
+            <table class="task1__table">
+                <tbody>
+                    <tr class="task1__table-row">
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell">Cell</td>
+                    </tr>
+                    <tr class="task1__table-row">
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell task1__table-cell_special">Special <br> Cell</td>
+                    </tr>
+                    <tr class="task1__table-row">
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell">Cell</td>
+                        <td class="task1__table-cell">Cell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="task2">
+        <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+        <form class="task2__form">
+            <input type="text" class="task2__form-inp" placeholder="Type phone number in format +380*********">
+            <button class="task2__form-btn" disabled>Send</button>
+        </form>
+    </div>
+
+    <div id="task3">
+        <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+        <div class="task3__wrapper">
+            <div class="task3__box">
+                <img src="./assets/court.png" alt="court" class="task3__court">
+                <img src="./assets/ball.png" alt="ball" class="task3__ball">
+            </div>
+            <div class="task3__score">
+                <div data-team="A" class="task3__score-item">Team A:<span>0</span></div>
+                <div data-team="B" class="task3__score-item">Team B:<span>0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
